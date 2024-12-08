@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "50955784111",
+    "project_id": "luxor-app-112a6",
+    "storage_bucket": "luxor-app-112a6.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:50955784111:android:0ae6e4c281b561e0b2a95a",
+        "android_client_info": {
+          "package_name": "io.ionic.starter"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCK8TEYmcwx2t4GSwxJAKeJxtKT_XL6JiU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
