@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
+import { MapView } from '../components/home/MapView';
 
 export function HomePage() {
   return (
@@ -43,6 +44,16 @@ export function HomePage() {
           <div className="space-y-4">
             {/* Featured rooms will be rendered here */}
           </div>
+        </section>
+
+        <section className="bg-gray-900 p-4 rounded-lg">
+          <h2 className="text-2xl font-light text-amber-500 mb-4">Find Us</h2>
+          <div className="w-full h-64 overflow-hidden rounded-lg">
+            <MapView />
+          </div>
+          <p className="text-gray-300 mt-4">
+            Luxor Hotel, located in the heart of the city, offers an exquisite experience. Visit us and enjoy the luxury.
+          </p>
         </section>
       </div>
     </div>

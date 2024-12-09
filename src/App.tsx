@@ -9,6 +9,7 @@ import { LoyaltyPage } from './pages/LoyaltyPage';
 import { ProfilePage } from './pages/ProfilePage';
 import { BottomNav } from './components/layout/BottomNav';
 import { AuthProvider, useAuth } from './context/AuthContext';
+import { LoadScript } from '@react-google-maps/api'; // Asegúrate de importar LoadScript
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
   const { isLoggedIn } = useAuth();
@@ -47,7 +48,10 @@ export default function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
-        <AppContent />
+        {/* Cargar el script de Google Maps solo una vez para toda la aplicación */}
+        <LoadScript googleMapsApiKey="AIzaSyDv4gdi2sI8_no1t7M5Pk0vy4SQuYGcICY">
+          <AppContent />
+        </LoadScript>
       </BrowserRouter>
     </AuthProvider>
   );

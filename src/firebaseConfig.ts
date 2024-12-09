@@ -21,7 +21,4 @@ if (!firebase.apps.length) {
 }
 
 
-//const db = getFirestore(app); // Inicializa Firestore
-
-//export { db }; // Exportamos la base de datos para usarla en otros archivos
 export { firebase };  // Exporta la configuración para usarla en otras partes de tu app
